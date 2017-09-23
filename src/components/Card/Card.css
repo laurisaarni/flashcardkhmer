@@ -1,0 +1,81 @@
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  margin: 10px 0 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+.ReactFlipCard {
+  margin: 10px;
+  text-align: center;
+}
+
+.ReactFlipCard,
+.ReactFlipCard__Front,
+.ReactFlipCard__Back {
+  box-sizing: border-box;
+  width: 300px;
+  height: 150px;
+}
+.ReactFlipCard__Front,
+.ReactFlipCard__Back {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.ReactFlipCard__Front {
+  background-color: #e3e3e3;
+}
+
+.completed .ReactFlipCard__Front {
+  background-color: #b0f2a8;
+}
+
+.ReactFlipCard__Back {
+  background-color: #e3e3e3;
+}
+
+.completed .ReactFlipCard__Back {
+  background-color: #b0f2a8;
+}
+
+.ReactFlipCard button {
+  border: none;
+  background: rgba(0,0,0,0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.cardValueWrapper{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  height: 130px;
+}
+
+.cardValue{
+  margin: auto;
+  font-size: 2em
+}
+
+.ReactFlipCard button.done{
+  left: 10px;
+}
+
+.ReactFlipCard button.remove{
+  top: 5px;
+  bottom: auto;
+}
+
+.completed button.done {
+  color: green;
+}
