@@ -69,6 +69,7 @@ li{
 
 .ReactFlipCard button.done{
   left: 10px;
+  right: auto;
 }
 
 .ReactFlipCard button.remove{
