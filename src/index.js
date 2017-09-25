@@ -12,7 +12,10 @@ import firebase from './config/Firebase'
 const store = createStore(reducer, applyMiddleware(logger))
 
 store.subscribe(() => {
-  firebase.database().ref('store/').set(store.getState());
+  //let deck = store.getState().deck
+  //firebase.database().ref('decks/' + deck).set(store.getState().cards)
+  firebase.database().ref('store/').set(store.getState())
+
 })
 
 ReactDOM.render(

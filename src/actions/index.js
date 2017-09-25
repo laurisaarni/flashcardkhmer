@@ -27,3 +27,13 @@ export const removeCard = (id) => ({
   type: 'REMOVE_CARD',
   id
 })
+
+export const selectDeck = (deck) => ({
+  type: 'SELECT_DECK',
+  deck
+})
+
+export const setPreviousDeck = (deck) => ({
+  type: 'SET_PREVIOUS',
+  deck
+})

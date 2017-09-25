@@ -7,13 +7,19 @@ let AddCard = ({ dispatch }) => {
   let inputFront
   let inputBack
 
-  firebase.database().ref('/store/').once('value').then(function(snapshot) {
-    var initialState = snapshot.val()
-    /*initialState.cards.find((card) => {
-      dispatch(addCard(card.front, card.back))
-    })*/
-    dispatch(addCards(initialState.cards))
-    dispatch(setVisibilityFilter(initialState.visibilityFilter))
+  firebase.database().ref('/decks/DEFAULT_DECK').once('value').then(function(snapshot) {
+    let initialDeck = snapshot.val()
+    //console.log(initialDeck)
+    if(initialDeck && initialDeck.length > 0){
+      dispatch(addCards(initialDeck))
+    }
+    firebase.database().ref('/store/').once('value').then(function(stateSnapshot) {
+      let initialState = stateSnapshot.val()
+      /*initialState.cards.find((card) => {
+        dispatch(addCard(card.front, card.back))
+      })*/
+      dispatch(setVisibilityFilter(initialState.visibilityFilter))
+    })
   })
 
   return (
