@@ -13,7 +13,9 @@ class App extends Component {
       <div className="App">
         <Appbar />
         <AddCard />
+        <hr/>
         <Footer />
+        <hr/>
         <VisibleCardList />
       </div>
     )

@@ -23,7 +23,7 @@ let AddCard = ({ dispatch }) => {
   })
 
   return (
-    <div>
+    <div className="addCard">
       <form onSubmit={e => {
         e.preventDefault()
         if (!inputFront.value.trim() || !inputBack.value.trim()) {

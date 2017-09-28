@@ -1,0 +1,17 @@
+.filterLink {
+  display: inline-block;
+  border: 1px solid #7DBF5E;
+  background-color: #F2F2F2;
+  color: #222;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+span.filterLink {
+  border: 1px solid #528f36;
+  background-color: #7DBF5E;
+  color: #fff;
+}

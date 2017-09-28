@@ -1,5 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+  text-align: center;
+}
+.addCard, nav{
+  padding: 0 10px
+}
+
+button {
+  border: 0;
+  background-color: #7DBF5E;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+input {
+  border: 1px solid #444;
+  background-color: #fff;
+  color: #222;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+select{
+  min-width: 200px;
+  font-size: 14px;
+  padding: 5px 10px;
 }

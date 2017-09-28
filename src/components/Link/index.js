@@ -4,7 +4,7 @@ import './Link.css'
 
 const Link = ({ active, children, onClick }) => {
   if (active) {
-    return <span>{children}</span>
+    return <span className="filterLink">{children}</span>
   }
 
   return (
@@ -14,6 +14,7 @@ const Link = ({ active, children, onClick }) => {
         e.preventDefault()
         onClick()
       }}
+      className="filterLink"
     >
       {children}
     </a>

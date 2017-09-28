@@ -2,21 +2,19 @@ import React from 'react'
 import FilterLink from '../../containers/FilterLink'
 import DeckSelect from '../../containers/DeckSelect'
 import SaveDeck from '../../containers/SaveDeck'
+import FontAwesome from 'react-fontawesome'
 import './Footer.css'
 
 const Footer = () => (
-  <footer>
+  <nav>
     <p>
-      Show:
-      {' '}
+      Filter <FontAwesome name='filter' />
       <FilterLink filter="SHOW_ALL">
         All
       </FilterLink>
-      {', '}
       <FilterLink filter="SHOW_ACTIVE">
         Still learning
       </FilterLink>
-      {', '}
       <FilterLink filter="SHOW_COMPLETED">
         Already learned
       </FilterLink>
@@ -46,7 +44,7 @@ const Footer = () => (
       ]}
     />
     <SaveDeck/>
-  </footer>
+  </nav>
 )
 
 export default Footer
